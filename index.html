@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="HomePage/news.css" />
+
+  <title>Rooted in Nature</title>
+  <link rel="stylesheet" href="HomePage/homepage.css" />
+  <!-- Add Font Awesome for hamburger menu icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+      <img src="HomePage/AgriLuntian_logo.png" alt="Logo" class="logo">
+    
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-btn" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav class="nav-links">
+        <div class="dropdown">
+            <button class="dropdown-btn" aria-expanded="false">
+              FARMING
+              <img src="HomePage/dropdown_icon.png" alt="" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Market</a></li>
+              <li><a href="#">Environment</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-btn" aria-expanded="false">
+              LIVESTOCK
+              <img src="HomePage/dropdown_icon.png" alt="" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-menu">
+			  <li><a href="#">Cattle Farming</a></li>
+			  <li><a href="#">Poultry Farming</a></li>
+			  <li><a href="#">Piggery Farming</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-btn" aria-expanded="false">
+              SERVICES
+              <img src="HomePage/dropdown_icon.png" alt="" class="dropdown-icon">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Loans</a></li>
+              <li><a href="#">Partnerships</a></li>
+            </ul>
+          </div>
+
+      <a href="#" class = "dropdown">NEWS</a>
+      <button class="login-btn"><a href = "LoginPage/Login.html" class = "login-btn a">LOGIN</a></button>
+    </nav>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-text">
+      <h1>Rooted in<br>Nature,<br>Growing for<br>the Future</h1>
+    </div>
+  </main>
+  
+  <section>
+  <div class = "about-us-content">
+	  <div class= "about-us-b1">
+      <h1> ABOUT US </h1>
+      
+        <p class = "about-us-p1">
+        <span style = "color: #AED22B; font-weight: 700;">AgriLuntian</span> combines “<b>Agri</b>,” meaning agriculture, 
+        with “<b>Luntian</b>,” the Filipino word for green, symbolizing 
+        life, growth, and abundance. 
+        </p>
+        
+        <p  class = "about-us-p2">
+        It reflects the fertile lands, thriving crops, and 
+        sustainable practices that define Philippine 
+        agriculture while also honoring the deep cultural 
+        connection between Filipino farmers and the land.  
+        The name represents not only productivity but also a 
+        commitment to eco-friendly farming, resilience, and 
+        the legacy of nurturing the environment for future 
+        generations. 
+        </p>
+      
+        <h1 class = "AgriLuntian"><span>Agri<span style = "color: #AED22B">Luntian</h1>
+      </div>
+      <div class = "container">
+        <img src = "HomePage/cattle.png" class = "cattle">
+      <div class = "about-us-b2">
+        <p><b>What is AgriLuntian</b></p>
+        <p>
+        An all-in-one digital platform designed to support and 
+        empower farmers by giving them easy access to 
+        agricultural knowledge, real-time data, and essential 
+        services. It connects farmers to valuable resources, helping 
+        them make smarter decisions, improve productivity, and 
+        build stronger linkages with support institutions.
+        </p>
+		  </div>
+	  </div>
+  </div> 
+  </section>
+
+  <footer>
+  <div class = "footer-container">
+	<div class = "footer-b1">
+		<img src = "HomePage/AgriLuntian_logo.png" class = "logo">
+		<p><b>
+		Agriculture Made Easy, <br> 	
+		Together with Farmers. </b><br>
+		by <span style = "color: #AED22B">AgriLuntian</span><br>
+		</p>
+	</div>
+	<div class = "footer-b2">
+		<p><b>MENU</b></p>
+		<ul class = "footer-link">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Farming</a></li>
+			<li><a href="#">Livestock</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">News</a></li>
+		</ul>
+	</div>
+	<div class = "footer-b3">
+		<p><b>MORE</b></p>
+		<ul class = "footer-link">
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">FAQs</a></li>
+		</ul>
+	</div>
+	<div class = "footer-b4">
+		<button class = "sign-up">SIGN UP</button>
+		<p class = "follow-us">FOLLOW US AT</p>
+			<div class = "soc">
+				<img src = "HomePage/tiktok_icon.png" class = "soc-icon">
+				<img src = "Homepage/insta_icon.png" class = "soc-icon">			
+				<img src = "Homepage/fb_icon.png" class = "soc-icon">
+			</div>
+	</div>
+  </div>
+  </footer>
+
+  <script src="HomePage/dropdown.js"></script>
+  <script>
+    // Mobile menu toggle functionality
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
