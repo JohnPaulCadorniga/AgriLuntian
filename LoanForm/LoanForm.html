@@ -64,9 +64,9 @@
                         <label for="lastName">LAST NAME</label>
                         <input type="text" id="lastName" name="lastName" placeholder="">
                     </div>
-                    <div class="form-group">
-                        <label for="mi">MI.</label>
-                        <input type="text" id="mi" name="mi" placeholder="">
+                     <div class="form-group">
+                        <label for="mi">MIDDLE NAME</label>
+                        <input type="text" id="mi" name="mi" placeholder="" class="middle-name-input">
                     </div>
                 </div>
                 <div class="form-row form-row-two-cols">
@@ -103,65 +103,52 @@
             </div>
 
             <div class="step-content" data-step="2">
-                <div class="form-row form-row-two-cols">
-                    <div class="form-group">
-                        <label for="selectOption">SELECT OPTION (SEEDS, LAND, SOIL, ETC.)</label>
-                        <select id="selectOption" name="selectOption">
-                            <option value="">Select an option</option>
-                            <option value="seeds">Seeds</option>
-                            <option value="land">Land</option>
-                            <option value="soil">Soil</option>
-                            <option value="other_option">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="farmSize">FARM SIZE (in m²)</label>
-                        <input type="number" id="farmSize" name="farmSize" placeholder="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="loanAddress">ADDRESS</label>
-                    <input type="text" id="loanAddress" name="loanAddress" placeholder="">
-                </div>
-                <div class="form-row form-row-two-cols">
-                    <div class="form-group">
-                        <label for="province">PROVINCE</label>
-                        <input type="text" id="province" name="province" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="loanAmountRequested">LOAN AMOUNT REQUESTED (₱)</label>
-                        <input type="number" id="loanAmountRequested" name="loanAmountRequested" placeholder="">
-                    </div>
-                </div>
+    <div class="form-group">
+        <label for="loanPurpose">PURPOSE OF THE LOAN</label>
+        <textarea id="loanPurpose" name="loanPurpose" placeholder="Briefly describe what the loan will be used for." rows="4"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="loanAddress">ADDRESS</label>
+        <input type="text" id="loanAddress" name="loanAddress" placeholder="">
+    </div>
+    <div class="form-row form-row-two-cols">
+        <div class="form-group">
+            <label for="province">PROVINCE</label>
+            <input type="text" id="province" name="province" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="loanAmountRequested">LOAN AMOUNT REQUESTED (₱)</label>
+            <input type="number" id="loanAmountRequested" name="loanAmountRequested" placeholder="">
+        </div>
+    </div>
 
-                <div class="form-group">
-                    <label>PREFERRED REPAYMENT</label>
-                    <div class="radio-group">
-                        <div class="radio-option">
-                            <input type="checkbox" id="repayment3Months" name="repaymentOption" value="3_months">
-                            <label for="repayment3Months">3 MONTHS</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="checkbox" id="repayment6Months" name="repaymentOption" value="6_months">
-                            <label for="repayment6Months">6 MONTHS</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="checkbox" id="repayment12Months" name="repaymentOption" value="12_months">
-                            <label for="repayment12Months">12 MONTHS</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="checkbox" id="repaymentOthers" name="repaymentOption" value="others">
-                            <label for="repaymentOthers">OTHERS:</label>
-                            <input type="text" id="repaymentOthersInput" name="repaymentOthersInput" style="width: 100px; margin-left: 5px; display: inline-block;">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-footer">
-                    <button type="button" class="btn btn-next">NEXT</button>
-                </div>
+    <div class="form-group">
+        <label>PREFERRED REPAYMENT</label>
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="checkbox" id="repayment3Months" name="repaymentOption" value="3_months">
+                <label for="repayment3Months">3 MONTHS</label>
             </div>
+            <div class="radio-option">
+                <input type="checkbox" id="repayment6Months" name="repaymentOption" value="6_months">
+                <label for="repayment6Months">6 MONTHS</label>
+            </div>
+            <div class="radio-option">
+                <input type="checkbox" id="repayment12Months" name="repaymentOption" value="12_months">
+                <label for="repayment12Months">12 MONTHS</label>
+            </div>
+            <div class="radio-option">
+                <input type="checkbox" id="repaymentOthers" name="repaymentOption" value="others">
+                <label for="repaymentOthers">OTHERS:</label>
+                <input type="text" id="repaymentOthersInput" name="repaymentOthersInput" style="width: 100px; margin-left: 5px; display: inline-block;">
+            </div>
+        </div>
+    </div>
 
+    <div class="form-footer">
+        <button type="button" class="btn btn-next">NEXT</button>
+    </div>
+</div>
             <div class="step-content" data-step="3">
                 <div class="form-group">
                     <label>VALID ID</label>

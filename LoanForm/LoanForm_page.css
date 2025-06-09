@@ -11,6 +11,7 @@
         }
 
         .form-container {
+            transform: scale(0.75);
             background-color: #ffffff; /* White background for the form itself */
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* Softer shadow */
@@ -222,6 +223,30 @@
         }
         .form-group input::placeholder {
             color: #aaa;
+        }
+        .form-group textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border: none;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 1em;
+        color: #333;
+        font-family: 'Poppins', sans-serif;
+        resize: vertical; /* Allows vertical resizing only */
+        min-height: 120px; /* Minimum height */
+        line-height: 1.5;
+        }
+
+        .form-group textarea::placeholder {
+            color: #aaa;
+            font-style: italic;
+        }
+
+        /* Adjust the form-group margin for the textarea to match other fields */
+        .form-group:first-child {
+            margin-bottom: 20px; /* Matches other form-group margins */
         }
 
         .form-row {
@@ -487,25 +512,4 @@
             }
         }
 
-        @media (max-width: 480px) {
-            .form-header h1 {
-                font-size: 1.5em;
-            }
-            .step-circle {
-                width: 40px;
-                height: 40px;
-                font-size: 1em;
-            }
-            .step-label {
-                font-size: 0.8em;
-            }
-            .file-upload {
-                padding: 20px;
-            }
-            .success-message h2 {
-                font-size: 1.5em;
-            }
-            .success-message p {
-                font-size: 0.9em;
-            }
-        }
+        
